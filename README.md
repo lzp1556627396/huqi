@@ -41,6 +41,17 @@ uv sync
 uv run attendance-gui
 ```
 
+## Windows 免开发环境启动
+
+如果你不想安装 Python/IDE，在 Windows 下可直接双击项目根目录的 `run.bat`：
+
+1. 双击 `run.bat`
+2. 脚本会自动安装 `uv`（若未安装）
+3. 自动下载 Python 与项目依赖
+4. 自动启动图形界面，选择 Excel 后点击“开始处理”
+
+说明：首次启动会联网下载运行时，时间会稍长。
+
 或命令行处理：
 
 ```bash
