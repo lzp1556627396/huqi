@@ -1,0 +1,28 @@
+[project]
+name = "attendance-tool"
+version = "0.1.0"
+description = "自动分析 Excel 打卡数据，计算正班、加班、迟到早退。"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openpyxl>=3.1.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyinstaller>=6.0",
+]
+
+[project.scripts]
+attendance-gui = "attendance_tool.main:main"
+attendance-cli = "attendance_tool.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
