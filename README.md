@@ -52,6 +52,18 @@ uv run attendance-gui
 
 说明：首次启动会联网下载运行时，时间会稍长。
 
+如果双击后窗口闪退，请直接双击 `run.bat` 再看提示，或把同目录 `run.log` 发给我。
+
+## Windows 本机一键打 EXE（无预装开发环境）
+
+如果云端 Actions 不可用，可在 Windows 双击 `build_exe_local.bat`：
+
+1. 自动安装 `uv`（若缺失）
+2. 自动安装依赖与 `PyInstaller`
+3. 自动产出 `dist\AttendanceAnalyzer.exe`
+
+若失败请查看 `build_exe.log`。
+
 或命令行处理：
 
 ```bash
